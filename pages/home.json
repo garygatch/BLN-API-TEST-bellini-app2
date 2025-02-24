@@ -1,0 +1,78 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/home",
+  "params": {},
+  "variables": [
+    {
+      "name": "get",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.task1.lonti_demo_api_tasks_services_task_SelectAllTask({\n  limit: 100\n}).then(result => {\nconsole.log(result.data.task)\n})",
+      "invokeOnLoad": true,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "task1",
+      "type": "open-api",
+      "id": "67bc153ce7f485388076e274"
+    },
+    {
+      "name": "test",
+      "type": "graphql-api",
+      "id": "67bc153ce7f485388076e275"
+    },
+    {
+      "name": "getWeather",
+      "type": "method",
+      "description": "",
+      "body": "$ctrl.test.query.weather({\n     city: \"Manila\" },\n    {\n        id: true,\n        cityName: true,\n        currentWeather: {\n            description: true,\n            humidity: true,\n            pressure: true,\n            status: true,\n            temp: true,\n            tempHigh: true,\n            tempLow: true,\n            windSpeed: true,\n        },\n    })\n    .then((result) => {\n        $ctrl.results = JSON.stringify(result, null, 2);\n        console.log($ctrl.results)\n    })",
+      "invokeOnLoad": false,
+      "isAsync": false,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": []
+    },
+    {
+      "name": "results",
+      "type": "property",
+      "description": "",
+      "value": ""
+    },
+    {
+      "name": "petstore",
+      "type": "open-api",
+      "id": "67bc153ce7f485388076e276"
+    }
+  ],
+  "children": [
+    {
+      "name": "global",
+      "nodeName": "global",
+      "elementId": "",
+      "attributes": [],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "custom-component",
+      "id": "67bc153ce7f485388076e271",
+      "expressions": []
+    }
+  ]
+}

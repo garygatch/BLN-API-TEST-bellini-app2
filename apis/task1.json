@@ -1,0 +1,11 @@
+{
+  "name": "task1",
+  "type": "open-api",
+  "spec": null,
+  "url": "https://demo-api.apiexplorer.io/rest/lonti_demo_api_tasks.api.lonti_demo_api_tasks/swagger.json",
+  "auth": null,
+  "server": {
+    "type": "2.0",
+    "scheme": "https"
+  }
+}

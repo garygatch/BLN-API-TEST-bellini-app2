@@ -1,0 +1,11 @@
+{
+  "name": "payments",
+  "type": "open-api",
+  "spec": null,
+  "url": "https://demo-api.apiexplorer.io/rest/lonti_demo_api_payments.api.lonti_demo_api_payments/swagger.json",
+  "auth": null,
+  "server": {
+    "type": "2.0",
+    "scheme": "https"
+  }
+}
